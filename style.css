@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:wght@100&family=Ubuntu:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fafafa;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    background-color: rgb(97, 113, 231);
+    height: 500px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 25px;
+    padding: 15px;
+    justify-content: center;
+    display: flex;
+}
+
+.box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+
+.search{
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    border: 0;
+    outline: none;
+    width: 280px;
+    border-radius: 8px;
+    padding: 10px;
+    height: 40px;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+}
+
+.divisoria{
+    width: 90% ;
+    background-color: white;
+    height: 1px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.lupa{
+    background-color: rgb(48, 138, 255);
+    padding: 10px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+}
+
+
+
+/* ======================section information============================ */
+
+
+.informacoes{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.city{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.name-city{
+    width: 130px;
+    display: flex;
+    word-break: break-word;
+}
+
+
+
+
+.temp-information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 32px;
+}
+
+.clima{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    font-size: 22px;
+    height: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.info-detalhada{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.divisoria-vertical{
+    background-color: #fff;
+    width: 1px;
+    height: 100px;
+}
+
+.umidade, .vento{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
