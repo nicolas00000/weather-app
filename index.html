@@ -15,8 +15,8 @@
             <h1>Confira o clima de uma cidade</h1>
             <br>
             <div class="search">
-                <input type="text" placeholder="Digite o nome do local" name="" id="">
-                <span class="material-symbols-outlined lupa">
+                <input type="text" placeholder="Digite o nome do local" name="" id="searcCity">
+                <span class="material-symbols-outlined lupa" id="buttonSearch" class="buttonSearch">
                     search
                 </span>
             </div>
@@ -24,38 +24,37 @@
             <br>
             <br>
 
-            <div class="divisoria"></div>
+            <div class="divisoria "></div>
 
-            <div class="informacoes">
+            <div class="informacoes hide">
             
                 <div class="city">
-                    <span class="material-symbols-outlined">
-                        location_on
-                    </span>
-
-                    <div class="name-city">jardim terras </div>
-
-                    <div class="bandeira"> =====</div>
+                    <i class="fa-solid fa-location-dot"> </i>
+                    <div class="name-city"> </div>
                 </div>
 
                 <div class="temp-information">
-                    <div class="temp">18c</div>
+                    <div class="temp"></div>
                     <div class="clima">
-                        <div class="clima-information">nuvens dispensas </div>
-                        icon nuvem
+                        <div class="clima-information">  </div>
+                        <div class="icon-temp">
+                            <img src="" class="iconWind" alt="">
+                        </div>
                     </div>
                 </div>
-
+                <br>
                 <div class="info-detalhada">
                     <div class="umidade">
-                        gota 
-                        <div class="umidade-information">undefined</div>
+                        <div class="icon-umidade">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <div class="umidade-information"></div>
                     </div>
                     <div class="divisoria-vertical"></div>
                     <div class="vento">
-                        iconn 
+                        <i class="fa-solid fa-wind"></i>
                         <div class="vento-information">
-                            4.12 KM/H
+
                         </div>
                     </div>
                 </div>
@@ -63,4 +62,9 @@
         </div>
     </section>
 </body>
+<!-- import axios -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- icon font -->
+<script src="https://kit.fontawesome.com/44fc8d9d55.js" crossorigin="anonymous"></script> 
+<script src="script.js"></script>
 </html>
