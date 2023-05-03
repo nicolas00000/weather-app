@@ -26,6 +26,7 @@ function dataApi(city){
 }
 
 function renderizar(dados){
+    document.querySelector(".sugestoes").classList.add("hide")
     document.body.style.backgroundImage = `url("${apiUnsplash + dados.data.name}")`;
     nameCity.innerHTML = dados.data.name
     temp.innerHTML = parseInt(dados.data.main.temp) + "°C"
@@ -37,6 +38,11 @@ function renderizar(dados){
         `http://openweathermap.org/img/wn/${dados.data.weather[0].icon}.png`
     );
     document.querySelector(".informacoes").classList.remove("hide")
+}
+
+function sugestion(element){
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${element}&units=metric&appid=${apiKey}&lang=pt_br`
+    axios.get(url).then(renderizar)
 }
 
 
