@@ -17,12 +17,14 @@ const windIcon = document.querySelector(".iconWind")
 
 
 //functions
-
-
 function dataApi(city){
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`
-    axios.get(url).then(renderizar)
+    axios.get(url).then(renderizar, rejeitar)
     
+}
+
+function rejeitar(dados){
+    alert("Por favor digite uma cidade válida")
 }
 
 function renderizar(dados){
@@ -38,6 +40,7 @@ function renderizar(dados){
         `http://openweathermap.org/img/wn/${dados.data.weather[0].icon}.png`
     );
     document.querySelector(".informacoes").classList.remove("hide")
+    return
 }
 
 function sugestion(element){
