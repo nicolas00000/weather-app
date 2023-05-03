@@ -25,8 +25,18 @@ section{
     justify-content: center;
     display: flex;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.42);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.42);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.42);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.42);
+}
+
+@media only screen and (max-width: 500px) {
+    section {
+        height: 100%;
+        width: 100vw;
+        border-radius: 0 !important;
+        box-shadow: 0 0 0 0;
+        max-width: 100%;
+    }
 }
 
 .hide{
@@ -187,7 +197,7 @@ i {
 .divisoria-vertical{
     background-color: #fff;
     width: 1px;
-    height: 80px;
+    height: 60px;
 }
 
 .umidade, .vento{
