@@ -1,6 +1,6 @@
 # weather-app
 <h3>
-  Utilizando uma API pública da ***openweathermap.org*** e a ***source.unsplash***, decidi criar uma site em que o usuario consegue vericar em tempo real a previsão do tempo de qualquer lugar do MUNDO
+  Utilizando uma API pública da openweathermap.org e a source.unsplash, decidi criar uma site em que o usuario consegue vericar em tempo real a previsão do tempo de qualquer lugar do MUNDO
   design pensado diretamente por mim mesmo
 <h3/>
 
