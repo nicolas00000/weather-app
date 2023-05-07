@@ -38,7 +38,14 @@ section{
         border-radius: 0 !important;
         box-shadow: 0 0 0 0;
         max-width: 100%;
+        align-items: center;
     }
+
+    .sugestoes h2{
+        margin: 10px;
+    }
+
+
 }
 
 .hide{
@@ -131,12 +138,13 @@ i {
 
 
 .informacoes{
-    height: 100%;
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 300px;
+    overflow-y: auto;
 }
 
 .city{
@@ -210,4 +218,15 @@ i{
     width: 50%;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.pais{
+    margin: 0 auto;
+}
+
+#error{
+    font-size: 22px;
+    color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
 }

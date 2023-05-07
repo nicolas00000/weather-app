@@ -27,7 +27,7 @@
             <div class="divisoria "></div>
 
 
-            <div class="sugestoes">
+            <div class="sugestoes hide">
                 <h2 onclick="sugestion('Rio de janeiro')">Rio de janeiro</h2>
                 <h2 onclick="sugestion('Brasilia')">Brasilia</h2>
                 <h2 onclick="sugestion('Salvador')">Salvador</h2>
@@ -36,19 +36,21 @@
             </div>
 
 
+            <div id="error" class="hide error">
+                <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
+            </div>
 
 
 
-
-            <div class="informacoes hide">
+            <div class="informacoes">
             
                 <div class="city">
                     <i class="fa-solid fa-location-dot"> </i>
-                    <div class="name-city"> </div>
+                    <div class="name-city"> sao jose dos campos </div>
                 </div>
 
                 <div class="temp-information">
-                    <div class="temp"></div>
+                    <div class="temp">31</div>
                     <div class="clima">
                         <div class="clima-information">  </div>
                         <div class="icon-temp">
@@ -61,6 +63,7 @@
                     <div class="umidade">
                         <div class="icon-umidade">
                             <i class="fa-solid fa-droplet"></i>
+                            
                         </div>
                         <div class="umidade-information"></div>
                     </div>
@@ -70,8 +73,62 @@
                         <div class="vento-information">
 
                         </div>
-                    </div>
+                    </div>  
                 </div>
+
+
+
+<br>
+
+                <div class="mais-detalhes">
+                    <div class="info-detalhada">
+                        <div class="umidade">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <div class="temp-max">
+                                22°c
+                            </div>
+                        </div>
+                        
+                        <div class="divisoria-vertical"></div>
+                        
+                        <div class="vento">
+                            <i class="fa-solid fa-arrow-down"></i>
+                            <div class="temp-min">
+                                14°c
+                            </div>
+                        </div>  
+                    </div>
+
+
+                    <div class="info-detalhada">
+                        <div class="vento">
+                            LON:
+                            <div class="lon">
+                                23213
+                            </div>
+                        </div>
+
+                        <div class="divisoria-vertical"></div>
+
+                        <div class="vento">
+                            LAT:
+                            <div class="lat">
+                                3213
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="vento pais">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <div class="pais-name">
+                            23213
+                        </div>
+                    </div>
+
+                </div>
+
+
+
             </div>
         </div>
     </section>
